@@ -17,49 +17,51 @@ const { title } = Astro.props as Props;
 	</head>
 	<body>
 		<header>
-			<div class="barra"><img src="" alt="" /></div>
-			<nav id="navlab">
-				<div class="logo">
-					<img
-						src="/ah-removebg-preview.png"
-						alt="logo"
-						class="logo"
-					/>
-				</div>
-				<ul id="menu">
-					<li>
-						<a>contacts</a>
+			<div class="sidebar">
+				<div class="barra"><img src="" alt="" /></div>
+				<nav id="navlab">
+					<div class="logo">
+						<img
+							src="/ah-removebg-preview.png"
+							alt="logo"
+							class="logo"
+						/>
+					</div>
+					<ul id="menu">
+						<li>
+							<a>contacts</a>
 
-						<a>service</a>
+							<a>service</a>
 
-						<a>about me</a>
-					</li>
-				</ul>
-				<div id="burger">
-					<button>
-						<div
-							class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
-						>
+							<a>about me</a>
+						</li>
+					</ul>
+					<div id="burguer">
+						<button>
 							<div
-								class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden group-focus:-translate-y-1.5 group-focus:-rotate-90"
+								class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
 							>
 								<div
-									class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg] group-focus:w-2/3 delay-150"
+									class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden group-focus:-translate-y-1.5 group-focus:-rotate-90"
 								>
-								</div>
-								<div
-									class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10"
-								>
-								</div>
-								<div
-									class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg] group-focus:w-2/3 delay-150"
-								>
+									<div
+										class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg] group-focus:w-2/3 delay-150"
+									>
+									</div>
+									<div
+										class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10"
+									>
+									</div>
+									<div
+										class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg] group-focus:w-2/3 delay-150"
+									>
+									</div>
 								</div>
 							</div>
-						</div>
-					</button>
-				</div>
-			</nav>
+						</button>
+					</div>
+				</nav>
+			</div>
 		</header>
 	</body>
 </html>
@@ -67,10 +69,6 @@ const { title } = Astro.props as Props;
 <slot />
 
 <style>
-	#GLOBO1 {
-		top: 0;
-		left: 0;
-	}
 	.logo {
 		width: 100px;
 		height: auto;
